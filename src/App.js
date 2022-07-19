@@ -55,6 +55,7 @@ import SeafoodPaella from './Seafood-Paella';
 import SeafoodPaella_fr from './Seafood-Paella_fr';
 import VegetarianLasagna from './Vegetarian-Lasagna';
 import VegetarianLasagna_fr from './Vegetarian-Lasagna_fr';
+import Error from './Error';
 function App() {
   return (
     <Router>
@@ -114,6 +115,7 @@ function App() {
           <Route path="/recipes/vegetarian-lasagna_fr/" element={<VegetarianLasagna_fr/>}></Route>
           <Route path="/about/" element={<About/>}></Route>
           <Route path="/About_fr/" element={<About_fr/>}></Route>
+          <Route path="*" element={<Error/>}></Route>
         </Routes>
     </div>
     </div>
